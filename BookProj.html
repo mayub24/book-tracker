@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
+    <link rel="stylesheet" href="proj.css">
+    <title>Book Project</title>
+</head>
+<body>
+
+  <div class="wrap">
+<div class="title is-1" style="margin-bottom: -10px">Add Book</div>
+
+<div class="button is-dark" style="float: right; margin-top: -50px; margin-right: 20px;" id="clr">Clear Library</div>
+
+<div class="err">
+
+</div>
+<!-- <div class="tag is-danger is-rounded" id="not">
+    Please enter valid values!
+    <span class="delete"></span>
+</div> -->
+
+<!-- Forms + Headings -->
+
+<form id="full-form">
+<!-- Title -->
+    <div>
+
+        <div class="field">
+            <label for="">Title</label>
+            <p class="control">
+            <input type="text" class="input" id="headr"> <!-- EACH TAG CAN ONLY HAVE 1 CLASS and 1 ID!!!!!!! -->
+        </p>
+        </div>
+
+    </div>
+
+
+    <!-- Author -->
+<div>
+
+    <div class="field">
+            <label for="">Author</label>
+            <p class="control">
+            <input type="text" class="input" id="author">
+        </p>
+        </div>
+
+    </div>
+
+    
+    
+    <!-- ISBN# -->
+    <div>
+        
+        <div class="field">
+            <label for="">ISBN#</label>
+            <p class="control">
+                <input type="text" class="input" id="isbn">
+            </p>
+        </div>
+        
+    </div>
+    
+<input type="submit" class="button is-fullwidth" id="butn">
+
+</form>
+
+
+<div class="table-time">
+
+<table class="table">
+<thead>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>ISBN</th>
+    </tr>
+</thead>
+
+<tbody id="book-info">
+   <!-- <tr>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+   </tr> -->
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+
+<script src="proj.js"></script>
+</body>
+</html>
